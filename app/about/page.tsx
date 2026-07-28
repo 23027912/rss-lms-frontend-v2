@@ -35,8 +35,8 @@ export default function AboutPage() {
         <p className="mono" style={{ color: 'var(--cyan)', fontSize: '0.75rem', textTransform: 'uppercase' }}>
           Student details
         </p>
-        <p style={{ margin: 0, color: 'var(--ink)', fontWeight: 600 }}>Your Name</p>
-        <p style={{ margin: 0 }}>Student No. 00000000</p>
+        <p style={{ margin: 0, color: 'var(--ink)', fontWeight: 600 }}>Sunita Yadav</p>
+        <p style={{ margin: 0 }}>Student ID. 23027912</p>
       </div>
 
       <h2 style={{ marginTop: 'var(--space-5)' }}>Walkthrough video</h2>

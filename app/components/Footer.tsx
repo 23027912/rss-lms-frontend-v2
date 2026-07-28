@@ -7,15 +7,11 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`${styles.inner} container`}>
         <div>
-          <p className={styles.name}>Your Name</p>
-          <p className={styles.student}>Student No. 00000000</p>
+          <p className={styles.name}>Sunita Yadav</p>
+          <p className={styles.student}>Student ID. 23027912</p>
         </div>
 
-        <nav aria-label="Footer" className={styles.links}>
-          <a href="/about">About</a>
-          <a href="/feeds">Feeds</a>
-          <a href="/settings">Settings</a>
-        </nav>
+        
 
         <p className={styles.copy}>© {year} Relay — RSS Server &amp; LMS project</p>
       </div>
