@@ -1,0 +1,165 @@
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.desktopLinks {
+  display: flex;
+  align-items: stretch;
+  list-style: none;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  overflow: visible;
+}
+
+.desktopLinks a {
+  display: block;
+  text-decoration: none;
+  color: var(--muted);
+  padding: 0.6rem 1rem;
+  background: var(--bg-raised);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transition: color 0.15s ease, background 0.15s ease;
+  height: 100%;
+}
+
+.desktopLinks > li:not(:first-child) > a,
+.desktopLinks > li:not(:first-child) > .hamburger {
+  border-left: 1px solid var(--line);
+}
+
+.desktopLinks a:hover {
+  color: var(--ink);
+  background: var(--bg-sunken);
+}
+
+.active {
+  color: #12181f !important;
+  background: var(--amber) !important;
+  font-weight: 600;
+}
+
+/* Kebab/hamburger — sits at the right end of the same rectangle row, always visible */
+.menuWrapper {
+  position: relative;
+  display: flex;
+}
+
+.hamburger {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 46px;
+  background: var(--bg-raised);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger:hover {
+  background: var(--bg-sunken);
+}
+
+.hamburgerActiveRoute {
+  background: var(--bg-sunken);
+}
+
+.hamburgerActiveRoute::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--amber);
+}
+
+.hamburger span {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: var(--ink);
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.hamburgerOpen span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.hamburgerOpen span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburgerOpen span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Dropdown panel — anchored under the kebab button */
+.dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 160px;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+  overflow: hidden;
+  z-index: 110;
+  transform: translateY(-6px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+.dropdownOpen {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.dropdown a {
+  display: block;
+  text-decoration: none;
+  color: var(--muted);
+  padding: 0.7rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--line);
+}
+
+.dropdown li:last-child a {
+  border-bottom: none;
+}
+
+.dropdown a:hover {
+  color: var(--ink);
+  background: var(--bg-sunken);
+}
+
+@media (max-width: 560px) {
+  .desktopLinks a {
+    padding: 0.55rem 0.7rem;
+    font-size: 0.72rem;
+  }
+
+  .dropdown {
+    min-width: 140px;
+  }
+}
