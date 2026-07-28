@@ -57,10 +57,13 @@ export default function AboutPage() {
         }}
       >
         {/* Replace the src below with your uploaded walkthrough video */}
-        <video controls style={{ width: '100%', height: '100%', borderRadius: 'var(--radius-md)' }}>
-          <source src="/walkthrough.mp4" type="video/mp4" />
-          Your browser does not support embedded video.
-        </video>
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          title="Relay walkthrough video"
+          style={{ width: '100%', height: '100%', border: 0, borderRadius: 'var(--radius-md)' }}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
       </div>
     </section>
   );
