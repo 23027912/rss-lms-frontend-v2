@@ -65,7 +65,7 @@ export default function AboutPage() {
       >
         {/* Replace the src below with your uploaded walkthrough video */}
         <iframe
-          src="https://www.youtube.com/embed/VIDEO_ID"
+          src="Sunita_Yadav_23027912.mp4"
           title="Relay walkthrough video"
           style={{ width: '100%', height: '100%', border: 0, borderRadius: 'var(--radius-md)' }}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
