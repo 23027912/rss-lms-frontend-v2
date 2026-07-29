@@ -1,7 +1,13 @@
 /**************************************************************************************************
- * This file provides the functionality to store the selected theme in the browser's local storage.
+ * ThemeContext
+ *
+ * Provides app-wide theme (light/dark) and layout density (comfortable/compact) state.
+ * On first load, reads a saved choice from localStorage, falling back to the visitor's
+ * OS colour-scheme preference if none is set. Every change is written back to
+ * localStorage and applied to <html> via data-theme / data-layout attributes, which the
+ * CSS variables in globals.css key off. Exposes useTheme() for any component to read or
+ * update these values.
  **************************************************************************************************/
-
 'use client';
 
 import {

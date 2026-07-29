@@ -1,3 +1,13 @@
+/**************************************************************************************************
+ * Nav
+ *
+ * Primary navigation bar. Renders Home and Feeds / Posts as always-visible block
+ * rectangles, plus a kebab/hamburger button at the end of the same row that opens a
+ * floating dropdown containing About and Settings. The dropdown closes on route change,
+ * outside click, or Escape, and the kebab button shows an indicator when the active
+ * route is one of the links hidden inside it.
+ **************************************************************************************************/
+
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
@@ -25,7 +35,7 @@ const MENU_LINKS: NavLink[] = [
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
-  const wrapperRef = useRef<HTMLDivElement>(null);
+  const wrapperRef = useRef<HTMLLIElement>(null);
 
   // Close the menu whenever the route changes
   useEffect(() => {

@@ -1,7 +1,11 @@
 /**************************************************************************************************
- * This file contains placeholder feed data until Assessment 2 backend integration is complete.
+ * feedData
+ *
+ * Placeholder feed data standing in for live RSS content until Assessment 2 backend
+ * integration is complete. Exports the FeedItem interface (id, title, date, tag, summary,
+ * body) and a sampleFeed array of blog-style items matching that shape, so FeedCard and
+ * the Feeds page can be swapped over to real fetched data without any code changes.
  **************************************************************************************************/
-
 export interface FeedItem {
   id: string;
   title: string;

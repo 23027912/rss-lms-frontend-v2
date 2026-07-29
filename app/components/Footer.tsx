@@ -1,3 +1,10 @@
+/**************************************************************************************************
+ * Footer
+ *
+ * Site footer shown at the bottom of every page. Displays the student name and ID
+ * required by the assessment brief, along with an auto-updating copyright year.
+ **************************************************************************************************/
+
 import styles from './Footer.module.css';
 
 export default function Footer() {

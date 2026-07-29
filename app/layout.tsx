@@ -1,3 +1,10 @@
+/**************************************************************************************************
+ * RootLayout
+ *
+ * Root layout applied to every page. Loads global styles and Google Fonts, wraps the
+ * app in ThemeProvider so theme/layout preferences are available everywhere, and renders
+ * the shared Header, Footer, and a skip-to-content link around each page's content.
+ **************************************************************************************************/
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import './globals.css';

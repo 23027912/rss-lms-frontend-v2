@@ -1,3 +1,10 @@
+/**************************************************************************************************
+ * SignalMark
+ *
+ * Logo mark used next to the "RELAY" wordmark in the header: three bars that pulse in a
+ * staggered animation, evoking a signal/broadcast waveform. Purely presentational, with
+ * an optional size prop, and respects prefers-reduced-motion.
+ **************************************************************************************************/
 interface SignalMarkProps {
   size?: number;
 }

@@ -1,3 +1,10 @@
+/**************************************************************************************************
+ * Settings page
+ *
+ * Lets the user switch theme (light/dark) and layout density (comfortable/compact) via
+ * ThemeContext; both choices persist to localStorage. Reached from the kebab/hamburger
+ * menu in the navigation bar. Renders nothing until preferences have loaded (ready).
+ **************************************************************************************************/
 'use client';
 
 import Breadcrumbs from '../components/Breadcrumbs';

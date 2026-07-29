@@ -1,3 +1,10 @@
+/**************************************************************************************************
+ * About page
+ *
+ * Explains the project scope (frontend-only for Assessment 1, RSS server coming in
+ * Assessment 2), shows the student name/ID, and embeds a walkthrough video via iframe
+ * demonstrating navigation, theme switching, and the hamburger menu.
+ **************************************************************************************************/
 import type { Metadata } from 'next';
 import Breadcrumbs from '../components/Breadcrumbs';
 

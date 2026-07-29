@@ -1,3 +1,10 @@
+/**************************************************************************************************
+ * Feeds / Posts page
+ *
+ * Displays the sample RSS-style content from lib/feedData as a responsive grid of
+ * FeedCard components, standing in for a live feed until Assessment 2 introduces the
+ * server. Includes a breadcrumb trail back to Home.
+ **************************************************************************************************/
 import type { Metadata } from 'next';
 import Breadcrumbs from '../components/Breadcrumbs';
 import FeedCard from '../components/FeedCard';

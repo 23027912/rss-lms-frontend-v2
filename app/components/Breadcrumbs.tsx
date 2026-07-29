@@ -1,3 +1,14 @@
+/**************************************************************************************************
+ * Breadcrumbs
+ *
+ * Reusable breadcrumb trail for structured navigation. Renders a chain of links back to
+ * Home, with the current page shown as plain (non-clickable) text in the accent colour.
+ * Used on the About, Feeds, and Settings pages.
+ *
+ * Props:
+ *   trail — ordered array of { label, href? }. Items with an href render as a link;
+ *           the item without an href (the current page) is rendered as the active crumb.
+ **************************************************************************************************/
 import Link from 'next/link';
 
 interface Crumb {

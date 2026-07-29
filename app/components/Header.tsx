@@ -1,3 +1,10 @@
+/**************************************************************************************************
+ * Header
+ *
+ * Sticky site header shown on every page. Displays the Relay logo/wordmark, the
+ * assessment title required by the brief, the primary navigation (Nav), and a
+ * quick-access button to toggle between light and dark theme via ThemeContext.
+ **************************************************************************************************/
 'use client';
 
 import Link from 'next/link';

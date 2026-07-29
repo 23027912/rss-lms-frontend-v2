@@ -1,3 +1,10 @@
+/**************************************************************************************************
+ * FeedCard
+ *
+ * Renders a single feed item as a card: tag, date, title, and summary, with a hide/show
+ * "Read more" toggle that expands the full body in place. Takes a typed FeedItem prop,
+ * so it works unchanged whether the data comes from the sample array or a live RSS fetch.
+ **************************************************************************************************/
 'use client';
 
 import { useState } from 'react';
